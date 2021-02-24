@@ -1,0 +1,3 @@
+[submodule "sc-dataset-visualizer"]
+	path = sc-dataset-visualizer
+	url = git@github.com:evilghostgirl/sc-dataset-visualizer.git
