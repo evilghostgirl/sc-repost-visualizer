@@ -1,1 +1,2 @@
-./chunks-all
+./chunks-all/*
+./src/assets/dataset/sorted.json
