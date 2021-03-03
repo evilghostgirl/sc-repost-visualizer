@@ -1,4 +1,4 @@
-# Tool to download and visualize all your reposts on soundcloud
+# Tool for download and visualize all your reposts on soundcloud
 
 > !! IMPORTANT NOTE !!
 > I am not responsible for the way and motivations how that script will be used by potential users.
