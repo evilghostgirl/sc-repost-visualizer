@@ -6,10 +6,10 @@ echo "last_count=$last_count"
 # zmergować n-1 plików
 
 # wziąć index ostatniego występującego utworu ze starego chunka
-cat chunks-all/2/3.json | jq  '.[] | .uuid ' | jq -s | jq ' indices("00000177-db29-25f8-ffff-ffff8b45ac59")'
+index=$(cat chunks-all/2/3.json | jq  '.[] | .uuid ' | jq -s | jq ' indices("00000177-db29-25f8-ffff-ffff8b45ac59") | .[0]')
 
 # wybrać [0, index]
- cat chunks-all/2/3.json| jq '.[0,3]' >> chunks-all/2/3.test.json
+cat chunks-all/2/3.json| jq ".[0,${index}]" | jq -s > chunks-all/2/3.test.json
 # zmergować
 # zmergowac z merged.json
 # posortowac
